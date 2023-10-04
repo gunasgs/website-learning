@@ -61,7 +61,7 @@ const Footer = () => {
 
         }}
       >
-        <Container maxWidth="lg" sx={{ ml: 7 }}>
+        <Container maxWidth="lg" >
           <Grid container spacing={5} sx={{ my: 3 }}>
             <Grid item xs={12} sm={4}  >
 
@@ -165,39 +165,44 @@ const Footer = () => {
 
 
         </Container>
-        <Divider variant="middle" color="#242424" />
-        <Box>
-          <Grid item xs={12} sm={12} sx={{ pl: 11 }}>
-            <Typography variant="h5" color="rgba(255,255,255,0.8)" gutterBottom sx={{ py: 2 }}>
 
-              PG Programs
-            </Typography>
-            {footer2.map((e) => (
-              <Typography variant="body2" color="rgba(255,255,255,0.5)" sx={{ py: 1 }}>
-                {e}
-              </Typography>))}
-          </Grid>
+        <Box>
+
+          <Container maxWidth="lg" >
+            <Divider variant="middle" color="#fff" />
+            <Grid item xs={12} sm={12} >
+              <Typography variant="h5" color="rgba(255,255,255,0.8)" gutterBottom sx={{ py: 2 }}>
+
+                PG Programs
+              </Typography>
+              {footer2.map((e) => (
+                <Typography variant="body2" color="rgba(255,255,255,0.5)" sx={{ py: 1 }}>
+                  {e}
+                </Typography>))}
+            </Grid>
+          </Container>
           <Divider variant="middle" color="#242424" sx={{ my: 3 }} />
         </Box>
 
         <Box>
-          <Grid container>
+          <Container maxWidth="lg" >
+            <Divider variant="middle" color="#fff" />
 
-
-            <Grid item xs={6} sm={6} sx={{ ml: 10, mt: 1 }}>
-              <Typography variant="body2" color="rgba(255,255,255,0.5)" sx={{ py: 3 }}>
-                Privacy Policy - Terms of Use
-              </Typography>
-              <Typography variant="body2" color="rgba(255,255,255,0.5)" >
-                {"© 2012 - 2023  Great Lakes E-Learning Services Pvt. Ltd. All rights reserved "}
-              </Typography>
+            <Grid container>
+              <Grid item xs={12} sm={6} sx={{ mt: 1 }}>
+                <Typography variant="body2" color="rgba(255,255,255,0.5)" sx={{ py: 3 }}>
+                  Privacy Policy - Terms of Use
+                </Typography>
+                <Typography variant="body2" color="rgba(255,255,255,0.5)" >
+                  {"© 2012 - 2023  Great Lakes E-Learning Services Pvt. Ltd. All rights reserved "}
+                </Typography>
+              </Grid>
+              <Grid xs={12} sm={6} sx={{ mt: 3, }}>
+                <Button variant="outlined" size="large" sx={{ p: 2, my: 2, mx: 3 }} color='inherit'>Get Our Andriod App</Button>
+                <Button variant="outlined" size="large" sx={{ p: 2, mx: 3 }} color='inherit'>Get Our IOS App</Button>
+              </Grid>
             </Grid>
-            <Grid sx={{ mt: 5 }}>
-              <Button variant="outlined" size="large" sx={{ p: 2 }} color='inherit'>Get Our Andriod App</Button>
-              <Button variant="outlined" size="large" sx={{ ml: 3, p: 2 }} color='inherit'>Get Our IOS App</Button>
-            </Grid>
-          </Grid>
-
+          </Container>
         </Box>
       </Box>
 

@@ -48,11 +48,10 @@ const Navbar = () => {
       sx={{
         backgroundColor: "#fff",
         color: "#000",
-        height: "5em",
-        boxShadow:1,
-        pt:1,
+        height: "70px",
+        boxShadow: 1,
+        pt: "5px",
         alignItems: "center",
-        
       }}
     >
       <Container maxWidth="xl">
@@ -60,7 +59,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
             <img src={Logo} alt="logo" loading="lazy" className="logo-img" />
           </Box>
-          <Box sx={{  display: { xs: "flex", md: "none" }, }}>
+          <Box sx={{ display: { xs: "flex", md: "none" }, }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -89,22 +88,9 @@ const Navbar = () => {
                 display: { xs: "block", md: "none", color: "#000" },
               }}
             >
-              <Button
-                href="#text-buttons"
-                size="small"
-                sx={{
-                  fontWeight: "700",
-                  height: "100px",
-                 
-                  "&:hover": {
-                    boxShadow: 1,
-                  },
-                }}
-              >
-                explore programs
-              </Button>
+
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} >
                   <Typography textAlign="center" sx={{ px: 2 }}>
                     {page}
                   </Typography>
@@ -112,23 +98,18 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "none" } }}>
-            <img src={Logo} alt="logo" loading="lazy" className="logo-img" />
-          </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+
+          <Box sx={{ flexGrow: 2, display: { xs: "none", md: "flex" } }}>
             <Button
               href="#text-buttons"
               variant="contained"
               size="large"
               endIcon={<KeyboardArrowDownIcon />}
               sx={{
-                height: "40px",
                 my: "auto",
-                mx: 3,
-                px: 2,
-                py:"22px",
-                fontSize: "16px",
+                px: "12px",
+                fontSize: "14px",
                 textTransform: "capitalize",
                 fontWeight: "700",
               }}
@@ -141,10 +122,12 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: "rgba(0,0,0,0.95)",
-                  fontWeight: "500",
+                  px: "2px",
+                  mx: 2,
+                  color: "rgba(0,0,0,0.65)",
+                  fontWeight: "600",
                   display: "block",
-                  px: 3,
+
                   fontSize: "15px",
                   cursor: "pointer",
                   textTransform: "capitalize",
@@ -158,13 +141,13 @@ const Navbar = () => {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0,display: { xs: "none", md: "flex" }, backgroundColor: "#F8F8F8" }}>
+          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" }, backgroundColor: "#F8F8F8" }}>
             <Button
               href="#text-buttons"
               sx={{
                 fontWeight: "700",
                 px: 3,
-                py:"10px",
+                py: "10px",
                 "&:hover": {
                   boxShadow: 1,
                 },

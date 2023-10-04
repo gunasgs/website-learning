@@ -22,31 +22,29 @@ const Home = () => {
       <Carousel>
         {HomeData.map((e) =>
         (
-
-
           <Carousel.Item interval={3000}>
-            <Grid container spacing={7} mb={5} >
+            <Grid container spacing={2} mb={3} >
 
-              <Grid item lg={6} mt={10} >
-                <Stack ml={15}>
+              <Grid item lg={6} mt={5} >
+                <Stack className="text-container">
                   <Typography variant="body2" sx={{ color: "#F8197A", fontWeight: "500", textTransform: "uppercase" }}  >
                     {e.tag}
                   </Typography>
-                  <Typography variant="h3" sx={{ fontWeight: "700", mx: "auto", mr: 5, mt: 1 }}>
+                  <Typography variant="h3" sx={{ fontWeight: "700", mx: "auto", mt: 1 }}>
                     {e.title}
                   </Typography>
                   <Typography variant="h6" sx={{ color: "#2b2b2b", py: 3, }}  >
                     {e.des}
                   </Typography>
-                  <Button variant="contained" sx={{ width: "300px", py: 2, my: 4 }} size="large">Explore Programs</Button>
-
+                  <Button variant="contained" sx={{ width: "300px", py: 2, my: 3 }} size="large">Explore Programs</Button>
                 </Stack>
               </Grid>
-              <Grid item lg={6} >
+              <Grid item lg={6} mx="auto">
                 <img
                   src={e.img}
                   alt="slider"
                   loading="lazy"
+                  className="slide-img"
                 />
               </Grid>
             </Grid>

@@ -47,26 +47,28 @@ const Reasons = () => {
     }]
     return (
         <>
-            <Box container maxWidth="lg" mx={"auto"} >
+            <Box container maxWidth="lg" mx={"auto"} mt={3} >
                 <Typography variant="body1" sx={{
-                    my: 2,
+                    my: 3,
                     color: "#0F4089", fontWeight: "500", textAlign: "center"
                 }} >
                     Here are more reasons
                 </Typography>
                 <Typography variant="h2" sx={{
-                    my: 2,
+                    my: 3,
+
                     fontWeight: "700", textAlign: "center"
                 }}>
                     Why choose Great Learning courses?
                 </Typography>
                 {data.map((e) => (
-                    <Grid container spacing={7} mt={2} flexDirection={e.row ? "row" : "row-reverse"}>
+                    <Grid container mt={2} spacing={3} flexDirection={e.row ? "row" : "row-reverse"}>
                         <Grid item lg={6} >
                             <img
                                 src={e.img}
                                 alt="person"
                                 loading="lazy"
+                                className='reason-img'
                             />
                         </Grid>
                         <Grid item lg={6}>
@@ -77,7 +79,7 @@ const Reasons = () => {
                                 <Typography variant="h6" sx={{ width: "80%", mx: "auto", color: "#919191", py: 3, textAlign: "center" }}  >
                                     {e.des}
                                 </Typography>
-                                <Stack direction="row" spacing={2} mx="auto" textAlign="center">
+                                <Stack direction="row" mx="auto" textAlign="center">
                                     <Grid py={2}>
                                         <DoneIcon sx={{ color: "#1ABAAF", backgroundColor: "#F8F8F8", borderRadius: 10, fontSize: "3rem", p: 1 }} />
                                         <Typography variant="h5" component="h2" fontWeight={600} py={1}>{e.val1}</Typography>

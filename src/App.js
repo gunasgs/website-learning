@@ -13,10 +13,10 @@ function App() {
       <Navbar />
       <Home />
       <Partners />
-      <CTA tag2={"66% of our learners transformed their careers"} tag3={"Alumni Career Transitions in the industry for degree & PG programs"} button={"download career report"} />
+      {/* <CTA tag2={"66% of our learners transformed their careers"} tag3={"Alumni Career Transitions in the industry for degree & PG programs"} button={"download career report"} /> */}
       <Reasons />
       <Client />
-      <CTA tag1={"Got more questions?"} tag2={"Talk to our team directly."} tag3={"A program advisor will get in touch with you shortly."} button={"contact us"} />
+      {/* <CTA tag1={"Got more questions?"} tag2={"Talk to our team directly."} tag3={"A program advisor will get in touch with you shortly."} button={"contact us"} /> */}
       <Footer />
     </>
   );
