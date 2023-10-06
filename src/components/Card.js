@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { Container, ImageListItem } from '@mui/material';
 
 
-function CardCom({ title, tag }) {
+function CardCom({ title, tag, date }) {
     let data = [1, 2, 3, 4, 5, 6, 7]
     return (
         <>
@@ -22,7 +22,8 @@ function CardCom({ title, tag }) {
                     {tag}
                 </Typography>}
                 {tag ? <Typography variant="h3" sx={{
-                    my: 4,
+                    mt: 1,
+                    mb: 3,
                     ml: 4,
                     fontWeight: "700"
                 }}>
@@ -73,14 +74,18 @@ function CardCom({ title, tag }) {
                                         loading="lazy"
                                     />
                                 </ImageListItem>
-                                <Typography variant="body1" fontWeight={500} py={2}>
+                                <Typography variant="body1" fontWeight={500} py={2} ml={1}>
                                     Best Corporate Training Platform - 2023
                                 </Typography>
 
 
                             </CardContent>
                             <CardActions>
-                                <Button size="small" sx={{ fontWeight: "600", textTransform: "none", fontSize: "15px" }}>Read more</Button>
+                                {date ? <Typography variant="body1" color={"#828282"} fontWeight={500} py={2} ml={2}>
+                                    {date}
+                                </Typography> :
+                                    <Button size="small" sx={{ fontWeight: "600", textTransform: "none", fontSize: "15px" }}>Read more</Button>
+                                }
                             </CardActions>
                         </Card>
                     ))}

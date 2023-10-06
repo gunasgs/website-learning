@@ -47,15 +47,15 @@ const Reasons = () => {
     }]
     return (
         <>
-            <Box container maxWidth="lg" mx={"auto"} mt={3} >
+            <Box container maxWidth="lg" mx={"auto"} mt={10} >
                 <Typography variant="body1" sx={{
-                    my: 3,
+                    mt: 5,
                     color: "#0F4089", fontWeight: "500", textAlign: "center"
                 }} >
                     Here are more reasons
                 </Typography>
-                <Typography variant="h2" sx={{
-                    my: 3,
+                <Typography variant="h3" sx={{
+
 
                     fontWeight: "700", textAlign: "center"
                 }}>
@@ -73,27 +73,27 @@ const Reasons = () => {
                         </Grid>
                         <Grid item lg={6}>
                             <Stack>
-                                <Typography variant="h3" sx={{ width: "70%", fontWeight: "500", mx: "auto", textAlign: "center", mt: 2 }}>
+                                <Typography variant="h4" sx={{ width: "80%", fontWeight: "500", mx: "auto", textAlign: "center", mt: 5 }}>
                                     {e.title}
                                 </Typography>
-                                <Typography variant="h6" sx={{ width: "80%", mx: "auto", color: "#919191", py: 3, textAlign: "center" }}  >
+                                <Typography variant="body1" sx={{ width: "80%", mx: "auto", color: "#919191", py: 3, lineHeight: "30px", textAlign: "center" }}  >
                                     {e.des}
                                 </Typography>
                                 <Stack direction="row" mx="auto" textAlign="center">
-                                    <Grid py={2}>
+                                    <Grid mr={10}>
                                         <DoneIcon sx={{ color: "#1ABAAF", backgroundColor: "#F8F8F8", borderRadius: 10, fontSize: "3rem", p: 1 }} />
-                                        <Typography variant="h5" component="h2" fontWeight={600} py={1}>{e.val1}</Typography>
-                                        <Typography variant="h6" color={"#818181"} sx={{ width: "90%" }} mx="auto" component="h2">{e.des1}</Typography>
+                                        <Typography variant="h6" fontWeight={600} py={1}>{e.val1}</Typography>
+                                        <Typography variant="body1" color={"#818181"} fontWeight={600} sx={{ width: "95%" }} mx="auto" component="h2">{e.des1}</Typography>
 
                                     </Grid>
-                                    <Grid py={2}>
+                                    <Grid  >
 
                                         <StarIcon sx={{ color: "#ffcc00", backgroundColor: "#F8F8F8", borderRadius: 10, fontSize: "3rem", p: 1 }} />
-                                        <Typography variant="h5" component="h2" fontWeight={600} py={1}>{e.val2}</Typography>
-                                        <Typography variant="h6" color={"#818181"} sx={{ width: "90%" }} mx="auto" component="h2">{e.des2}</Typography>
+                                        <Typography variant="h6" fontWeight={600} py={1}>{e.val2}</Typography>
+                                        <Typography variant="body1" color={"#818181"} fontWeight={600} sx={{ width: "100%" }} mx="auto" component="h2">{e.des2}</Typography>
                                     </Grid>
                                 </Stack>
-                                {e.button && <Button variant="contained" sx={{ width: "200px", mx: "auto", py: 2, my: 4 }} size="large">{e.button}</Button>}
+                                {e.button && <Button variant="contained" sx={{ width: "200px", mx: "auto", py: 2, mt: 8 }} size="large">{e.button}</Button>}
                             </Stack>
                         </Grid>
                     </Grid>)

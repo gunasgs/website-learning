@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
 }
 
 ::-webkit-scrollbar {
@@ -38,6 +36,14 @@
   opacity: 0.8;
 }
 
+[data-bs-theme=dark].carousel .carousel-control-prev-icon {
+  filter: invert(0) grayscale(100);
+}
+
+[data-bs-theme=dark].carousel .carousel-control-next-icon {
+  filter: invert(0) grayscale(100);
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
@@ -49,7 +55,7 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #000;
+  background-color: #000 !important;
   padding: 20px;
   border-radius: 50%;
 }

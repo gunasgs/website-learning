@@ -3,7 +3,7 @@ import React from 'react'
 
 const CTA = ({ tag1, tag2, tag3, button }) => {
     return (
-        <Box className="cta-box" sx={{ backgroundColor: "#705DED", p: 5, mx: "auto", my: 5, mb: 10, borderRadius: 2, width: "90%" }} >
+        <Box className="cta-box" sx={{ backgroundColor: "#705DED", p: 5, mx: "auto", my: 10, borderRadius: 2, width: "90%" }} >
             <Grid sx={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }}>
 
                 <Grid lg={6} color="white" width={"60%"}>

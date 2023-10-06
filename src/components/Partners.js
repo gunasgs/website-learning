@@ -10,16 +10,18 @@ const Partners = () => {
     <>
       <Box container sx={{
         width: "100%",
-        height: "100%"
+        height: "100%",
+        mt: 2,
+
       }}>
         <Stack>
           <Typography variant="body1" my={2} component="h2" color={"#0F4089"} fontWeight={500} textAlign="center">
             In partnership with
           </Typography>
-          <Typography variant="h3" component="h2" my={2} textAlign="center" fontWeight={700}>
+          <Typography variant="h3" component="h2" textAlign="center" fontWeight={700}>
             World's Top Universities
           </Typography>
-          <ImageList sx={{ width: "70%", marginX: "auto", py: 4 }} className='brand-list'>
+          <ImageList sx={{ width: "70%", marginX: "auto", py: 3 }} className='brand-list'>
             {logo.map((item) => (
               <ImageListItem key={item.img} sx={{ width: "200px" }}>
                 <img
@@ -32,7 +34,7 @@ const Partners = () => {
               </ImageListItem>
             ))}
           </ImageList>
-          <Stack marginX="auto" my={2}>
+          <Stack marginX="auto" my={1}>
 
             <Button variant="contained" sx={{
               width: "250px", backgroundColor: "#E8F0FC", color: "#196AE5", py: 2, boxShadow: 0,

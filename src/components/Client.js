@@ -33,16 +33,16 @@ const Client = () => {
     return (
         <>
 
-            <Box container maxWidth="xl" mx={"auto"} mt={10} >
+            <Box container maxWidth="xl" mx={"auto"} mt={7} >
                 <Typography variant="body1" sx={{
 
-                    my: 2,
+
                     color: "#0F4089", fontWeight: "500", textAlign: "center"
                 }} >
                     Providing online education for
                 </Typography>
-                <Typography variant="h2" sx={{
-                    my: 2,
+                <Typography variant="h3" sx={{
+                    mt: 2,
                     fontWeight: "700", textAlign: "center"
                 }}>
                     Learners across 170+ countries
@@ -53,12 +53,12 @@ const Client = () => {
                         src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/learners-banner.png"
                         alt="person"
                         loading="lazy"
-
                     />
                 </Stack>
-                <Stack xs={12} sx={{ width: "90%", mx: "auto", my: 3, display: "flex", flexDirection: "row", gap: 2, justifyContent: "center", flexWrap: "wrap" }}>
+                <Stack xs={12} sx={{ px: 10, mx: "auto", my: 3, display: "flex", flexDirection: "row", gap: 2, justifyContent: "center", flexWrap: "wrap" }}>
                     {cardData.map((e) => (
-                        <Card xs={12} sx={{ width: "400px", display: "flex", flexDirection: "row", borderRadius: 3, justifyContent: "space-around", p: 4, alignItems: "center" }} spacing={2}>  <Avatar alt="app-icon" src={e.icon} />
+                        <Card xs={12} sx={{ width: "500px", display: "flex", flexDirection: "row", borderRadius: 3, justifyContent: "space-around", p: 3, alignItems: "center", boxShadow: 3 }} >
+                            <Avatar alt="app-icon" src={e.icon} />
                             <Typography variant='h5' sx={{ fontSize: "20px" }}>{e.name}</Typography>
                             <Stack display={'flex'} direction={"row"} sx={{ backgroundColor: "#0054A3", borderRadius: 5, p: "4px" }}>
                                 <Typography color="#fff">{e.value} </Typography>
@@ -75,7 +75,7 @@ const Client = () => {
 
             </Box>
             <Container  >
-                <Grid width={"90%"} mx={"auto"} my={8} container sx={{ borderRadius: 2, backgroundColor: "#F8F8F8", }}>
+                <Grid width={"90%"} mx={"auto"} mt={8} container sx={{ borderRadius: 2, backgroundColor: "#F8F8F8", }}>
 
                     <Grid item lg={6} my={"auto"}>
                         <Stack p={5}>

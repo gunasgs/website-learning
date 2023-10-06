@@ -4,7 +4,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 
 
-
 const Home = () => {
 
   let HomeData = [{
@@ -19,11 +18,11 @@ const Home = () => {
   }]
   return (
     <>
-      <Carousel>
+      <Carousel data-bs-theme="dark">
         {HomeData.map((e) =>
         (
           <Carousel.Item interval={3000}>
-            <Grid container spacing={2} mb={3} >
+            <Grid container spacing={2} my={3}>
 
               <Grid item lg={6} mt={5} >
                 <Stack className="text-container">
